@@ -1,0 +1,188 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Persons living in acceptable housing, by tenure and other selected sociodemographic characteristics","46100072",,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=4610007201",1;2;3,"CURRENT - a cube available to the public and that is current","Occasional","2018-01-01","2022-01-01","5",
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+"1","Geography",,""
+"2","Tenure",4,""
+"3","Sociodemographic characteristics",,""
+"4","Acceptable housing",2,""
+"5","Statistics",,""
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+"1","Canada (excluding territories)","[11124]","1","","",,
+"2","Owner household","","2","1","",,
+"2","Renter household","","3","1","",,
+"2","Total, by tenure","","1","","",,
+"3","Men+","","2","1","",6,
+"3","Women+","","3","1","",6,
+"3","0 to 14 years","","5","4","",,
+"3","15 to 24 years","","6","4","",,
+"3","25 to 54 years","","7","4","",,
+"3","55 to 64 years","","11","4","",,
+"3","65 years and over","","12","4","",,
+"3","25 to 34 years","","8","7","",,
+"3","35 to 44 years","","9","7","",,
+"3","45 to 54 years","","10","7","",,
+"3","65 to 74 years","","13","12","",,
+"3","75 years and over","","14","12","",,
+"3","Non-immigrants","","16","15","",8,
+"3","Immigrants","","17","15","",9,
+"3","Non-permanent residents","","23","15","",10,
+"3","Immigrants, 10 years or less in Canada","","18","17","",,
+"3","Immigrants, more than 10 years in Canada","","21","17","",,
+"3","Immigrants, years in Canada not stated","","22","17","",,
+"3","Immigrants, 5 years or less in Canada","","19","18","",,
+"3","Immigrants, more than 5 years to 10 years in Canada","","20","18","",,
+"3","Visible minority population","","25","24","",,
+"3","Not a visible minority","","38","24","",17,
+"3","South Asian","","26","25","",12,
+"3","Chinese","","27","25","",,
+"3","Black","","28","25","",,
+"3","Filipino","","29","25","",,
+"3","Arab","","30","25","",,
+"3","Latin American","","31","25","",,
+"3","Southeast Asian","","32","25","",13,
+"3","West Asian","","33","25","",14,
+"3","Korean","","34","25","",,
+"3","Japanese","","35","25","",,
+"3","Visible minority, not included elsewhere","","36","25","",15,
+"3","Multiple visible minorities","","37","25","",16,
+"3","Indigenous identity","","40","39","",,
+"3","Non-Indigenous identity","","46","39","",,
+"3","Single Indigenous identity","","41","40","",18,
+"3","Multiple Indigenous identities","","45","40","",20,
+"3","First Nations","","42","41","",19,
+"3","Métis","","43","41","",,
+"3","Inuk (Inuit)","","44","41","",,
+"3","Veterans","","48","47","",21,
+"3","Non-veterans","","49","47","",21,
+"3","English only","","51","50","",,
+"3","French only","","52","50","",,
+"3","English and French","","53","50","",,
+"3","Neither English nor French","","54","50","",,
+"3","No certificate, diploma or degree","","56","55","",,
+"3","Secondary (high) school diploma or equivalency certificate","","57","55","",,
+"3","Postsecondary certificate, diploma or degree","","58","55","",,
+"3","Postsecondary certificate or diploma below bachelor level","","59","58","",,
+"3","Bachelor's degree or higher","","63","58","",,
+"3","College, CEGEP or other non-university certificate or diploma","","61","59","",,
+"3","University certificate or diploma below bachelor level","","62","59","",,
+"3","Apprenticeship or trades certificate or diploma","","60","59","",,
+"3","Bachelor's degree","","64","63","",,
+"3","University certificate, diploma or degree above bachelor level","","65","63","",,
+"3","Working at a paid job or business","","67","66","",21,
+"3","Retired","","68","66","",21,
+"3","Other activity","","69","66","",21;22,
+"3","Third income quintile","","73","70","",,
+"3","Fourth income quintile","","74","70","",,
+"3","Highest income quintile","","75","70","",,
+"3","Lowest income quintile","","71","70","",,
+"3","Second income quintile","","72","70","",,
+"3","One-person households","","77","76","",,
+"3","Couple households","","80","76","",23,
+"3","One-parent households","","84","76","",24,
+"3","Other households with related or unrelated persons","","87","76","",25,
+"3","Men+ living alone","","78","77","",,
+"3","Women+ living alone","","79","77","",,
+"3","Couples without children","","81","80","",,
+"3","Couples with children","","82","80","",,
+"3","Couples with other related or unrelated persons","","83","80","",,
+"3","Male one-parent households","","85","84","",,
+"3","Female one-parent households","","86","84","",,
+"3","One person","","89","88","",,
+"3","Two persons","","90","88","",,
+"3","Three persons","","91","88","",,
+"3","Four or more persons","","92","88","",,
+"3","Population centres","","94","93","",,
+"3","Rural areas","","98","93","",,
+"3","Large urban population centres","","95","94","",27,
+"3","Medium population centres","","96","94","",28,
+"3","Small population centres","","97","94","",29,
+"3","Total, by gender","","1","","",5,
+"3","Total, by age group","","4","","",,
+"3","Total, by immigrant status","","15","","",7,
+"3","Total, by visible minority group","","24","","",7;11,
+"3","Total, by Indigenous identity","","39","","",7,
+"3","Total, by Veteran status","","47","","",7;21,
+"3","Total, by first official language spoken","","50","","",7,
+"3","Total, highest certificate, diploma or degree","","55","","",,
+"3","Total, by household type of person","","76","","",,
+"3","Total, by size of household of person","","88","","",,
+"3","Total, all population centres and rural areas","","93","","",26,
+"3","Total, by main activity","","66","","",7;21,
+"3","Total, by household income quintile","","70","","",,
+"4","Below one standard","","2","1","",,
+"4","Below two standards","","6","1","",,
+"4","Below all three standards","","10","1","",,
+"4","Below affordability only","","3","2","",,
+"4","Below suitability only","","4","2","",,
+"4","Dwelling in need of major repairs only","","5","2","",,
+"4","Below affordability and suitability","","7","6","",,
+"4","Below affordability and dwelling in need of major repairs","","8","6","",,
+"4","Below suitability and dwelling in need of major repairs","","9","6","",,
+"4","Does not live in acceptable housing","","1","","",,
+"4","Lives in acceptable housing","","11","","",,
+"5","Percentage of persons","","1","","",,
+"5","Lower bound of 95% confidence interval, percentage of persons","","2","","",,
+"5","Upper bound of 95% confidence interval, percentage of persons","","3","","",,
+"5","Number of persons","","4","","",,
+"5","Lower bound of 95% confidence interval, number of persons","","5","","",,
+"5","Upper bound of 95% confidence interval, number of persons","","6","","",,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period","..",
+"less than the limit of detection","<LOD",
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded","0s",
+"data quality: excellent","A",
+"data quality: very good","B",
+"data quality: good","C",
+"data quality: acceptable","D",
+"use with caution","E",
+"too unreliable to be published","F",
+"not applicable","...",
+"preliminary","p",
+"revised","r",
+"suppressed to meet the confidentiality requirements of the Statistics Act","x",
+"terminated","t",
+
+"Survey Code","Survey Name"
+"5269","Canadian Housing Survey"
+
+"Subject Code","Subject Name"
+"46","Housing"
+
+"Note ID",Note
+1,"Source: Statistics Canada, Canadian Housing Survey."
+2,"Acceptable housing refers to whether a private household’s housing meets each of the three standards established by the Canada Mortgage and Housing Corporation (CMHC) for affordability, suitability and condition of dwelling. Affordable housing has shelter costs equal to less than 30% of total before-tax household income. Suitable housing has enough bedrooms for the size and composition of resident households according to the National Occupancy Standard (NOS), conceived by the CMHC and provincial and territorial representatives. Housing meets the condition of dwelling standard when its residents report it as not requiring any major repairs. Housing that is affordable, suitable in size, and not in need of major repairs, is considered to be acceptable."
+3,"The confidence interval illustrates the degree of variability associated with an estimate. A wider confidence interval indicates higher variability, meaning that the estimate should be interpreted with due caution. The 95% confidence interval of an estimate means that if the survey were repeated over and over, the confidence interval would cover the true population value 95% of the time (or 19 times out of 20). Bootstrapping techniques were used to produce the 95% confidence intervals."
+4,"“Tenure” refers to whether the person’s household owns or rents their private dwelling."
+5,"Gender refers to an individual’s personal and social identity as a man, woman or non-binary person (a person who is not exclusively a man or a woman). A person’s gender may differ from their sex at birth and from what is indicated on their current identification or legal documents, such as their birth certificate, passport or driver’s licence. A person’s gender may change over time. Some people may not identify with a specific gender."
+6,"Given that the non-binary population is small, data aggregation to a two-category gender variable is sometimes necessary to protect the confidentiality of responses provided. In these cases, individuals in the category “non-binary persons” are distributed into the other two gender categories and are denoted by the “+” symbol."
+7,"This total includes respondents for whom this sociodemographic characteristic is not known."
+8,"“Non-immigrant” refers to a person who was born in Canada or who is a Canadian citizen by birth."
+9,"“Immigrant” refers to a person who is, or who has ever been, a landed immigrant or permanent resident. Such a person has been granted the right to live in Canada permanently by immigration authorities. Immigrants who have obtained Canadian citizenship by naturalization are included in this group."
+10,"“Non-permanent resident” refers to a person from another country with a usual place of residence in Canada and who has a work or study permit or who has claimed refugee status (asylum claimant). Family members living with work or study permit holders are also included, unless these family members are already Canadian citizens, landed immigrants or permanent residents."
+11,"The Employment Equity Act defines visible minorities as “persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in colour.” In analytical and communications products, the term “visible minority” has been replaced by the terms “racialized population” or “racialized groups”, reflecting the increased use of these terms in the public sphere."
+12,"This category includes, for example, “East Indian,” “Pakistani,” and “Sri Lankan.”"
+13,"This category includes, for example, “Vietnamese,” “Cambodian,” “Laotian,” and “Thai.”"
+14,"This category includes, for example, “Afghan” and “Iranian.”"
+15,"This category includes persons who provided a write-in response such as “Guyanese,” “West Indian,” “Tibetan,” “Polynesian,” and “Pacific Islander.”"
+16,"This category includes persons who indicated more than one visible minority (for example, “Black” and “South Asian”)."
+17,"This category includes Indigenous persons as well as persons who were not considered to be members of a visible minority group."
+18,"Includes persons who identify with only one Indigenous group, that is, First Nations (North American Indian), Métis or Inuk (Inuit)."
+19,"The data do not include people living on reserve."
+20,"Includes persons who identify with two or all three of the following Indigenous groups: First Nations (North American Indian), Métis and/or Inuk (Inuit)."
+21,"This category excludes persons aged under 15 years."
+22,"This category includes persons who reported their main activity during the last week as one of the following: “Vacation from paid work,” “Looking for paid work,” “Going to school, including vacation from school,” “Caring for children,” “Household work,” “Maternity/paternity or parental leave,” “Long-term illness,” “Volunteering,” “Caregiving other than for children,” “No main activity” or “Other.”"
+23,"A couple household consists of a couple living together (married or common-law) with or without children or other related or unrelated persons. In this table, “couples without children” are households consisting of a couple only, without children or other related or unrelated persons; “couples with children” are households consisting of a couple with children only, without other related or unrelated persons; and “couples with other related or unrelated persons” are all other couple households."
+24,"A one-parent household is a household with only one parent, of any gender, and with at least one child. One-parent households with other related or unrelated persons are not included."
+25,"Includes households with children and additional related or unrelated persons, as well as non-couple households composed of two or more related or unrelated persons."
+26,"A population centre has a population of at least 1,000 and a population density of 400 persons or more per square kilometre, based on population counts from the current Census of Population. All areas outside population centres are classified as rural areas. Taken together, population centres and rural areas cover all of Canada."
+27,"“Large urban population centres” have a population of 100,000 or more."
+28,"“Medium population centres” have a population between 30,000 and 99,999"
+29,"“Small population centres” have a population between 1,000 and 29,999"
+
+"Correction ID","Correction Date","Correction Note"
+"3796","2024-03-18","On March 18, 2024, the data from 2018 and 2021 have been corrected in the highest certificate, diploma or degree variable (stubset) in the following categories: no certificate, diploma or degree; high (secondary) school diploma or equivalency certificate; and postsecondary certificate, diploma or degree.",
+
