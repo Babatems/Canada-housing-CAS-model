@@ -5,7 +5,7 @@ neighbourhood, and employer agents interact on a weighted graph calibrated with
 real Canadian open-source data. Six experiments demonstrate emergence (E1, E2,
 E3) and self-organization (S1, S2, S3) by varying four core model parameters.
 
-Datasets used:
+Datasets:
   - Statistics Canada Table 46-10-0072-01 (Housing Acceptability by Immigrant
     Status) — https://www150.statcan.gc.ca/n1/tbl/csv/46100072-eng.zip
   - Statistics Canada Table 18-10-0205-01 (New Housing Price Index, Monthly)
