@@ -5,6 +5,7 @@ import numpy as np
 # Path to the data directory, relative to this script
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 
+#Renaming files to a dictionary for easy access and maintenance
 FILES = {
     "statcan_housing": "housing-acceptable-data/statcan_housing_acceptable.csv",
     "statcan_price_index": "hpi-data/statcan_housing_price_index.csv",
@@ -18,6 +19,7 @@ CMHC_RENT_COLUMNS = [
     'bachelor_vacant', 'bachelor_vacant_flag', 'bachelor_occupied', 'bachelor_occupied_flag', 'bachelor_sig', 'bedroom1_vacant', 'bedroom1_vacant_flag', 'bedroom1_occupied', 'bedroom1_occupied_flag', 'bedroom1_sig', 'bedroom2_vacant', 'bedroom2_vacant_flag', 'bedroom2_occupied', 'bedroom2_occupied_flag', 'bedroom2_sig', 'bedroom3_vacant', 'bedroom3_vacant_flag', 'bedroom3_occupied', 'bedroom3_occupied_flag', 'bedroom3_sig', 'total_vacant', 'total_vacant_flag', 'total_occupied', 'total_occupied_flag', 'total_sig'
 ]
 
+#header function to find the header row in an Excel file based on a keyword
 def find_header_row(path, keyword, sheet=0, max_rows=20):
     raw = pd.read_excel(path, sheet_name=sheet, header=None, nrows=max_rows, engine='openpyxl')
     for i, row in raw.iterrows():
@@ -25,7 +27,7 @@ def find_header_row(path, keyword, sheet=0, max_rows=20):
             return i
     return 0
 
-
+#A loader function to read Excel files with dynamic header row detection, and handle errors.
 def load_xlsx_smart(key, header_keyword, sheet=0):
     path = os.path.join(DATA_DIR, FILES[key])
     try:
@@ -41,7 +43,7 @@ def load_xlsx_smart(key, header_keyword, sheet=0):
         print(f"\n Error loading [{key}]: {e}")
         return None
 
-
+#A loader function to read CSV files with error handling and encoding fallbacks.
 def load_csv(key):
     path = os.path.join(DATA_DIR, FILES[key])
     try:
@@ -59,7 +61,7 @@ def load_csv(key):
         print(f"\n Error loading [{key}]: {e}")
         return None
 
-
+#A fucntion to help clean up column names. Strips whitespace, converts to lowercase, replaces spaces and newlines with underscores, and removes special characters.
 def clean_columns(df):
     df.columns = (df.columns
                   .astype(str)
@@ -70,14 +72,14 @@ def clean_columns(df):
     )
     return df
 
-
+#A function to convert columns to numeric format 
 def to_numeric_safe(series):
     return pd.to_numeric(
         series.astype(str).str.replace('--', '', regex=False).str.strip(),
         errors='coerce'
     )
 
-
+#Function to load Statcan housing dataset
 def load_statcan_housing():
     """
     Statistics Canada — Persons in acceptable/unacceptable housing.
@@ -92,7 +94,7 @@ def load_statcan_housing():
         df = df[df['statistics'].str.strip() == 'Percentage of persons'].copy()
     return df.reset_index(drop=True)
 
-
+#Funcrion to load Statcan housing price index dataset
 def load_statcan_price_index():
     """
     Statistics Canada — New Housing Price Index, monthly by CMA.
@@ -108,7 +110,7 @@ def load_statcan_price_index():
         df = df[df['new_housing_price_indexes'].str.strip() == 'Total (house and land)'].copy()
     return df.reset_index(drop=True)
 
-
+#Function to load CMHC average rent dataset.
 def load_cmhc_avg_rents():
     """
     CMHC — Average Apartment Rents (Vacant & Occupied).
@@ -146,7 +148,7 @@ def load_cmhc_avg_rents():
         print(f"\n Error loading [cmhc_avg_rents]: {e}")
         return None
 
-
+#FUnction to load CMHC vacancy dataset
 def load_cmhc_vacancy():
     """
     CMHC — Urban Rental Market Vacancy Rates.
@@ -165,7 +167,7 @@ def load_cmhc_vacancy():
             df[col] = to_numeric_safe(df[col])
     return df
 
-
+#Function to load CMHC vacancy by rent quartile dataset
 def load_cmhc_vacancy_quartile():
     """
     CMHC — Vacancy Rate by Rent Quartile.
@@ -183,7 +185,7 @@ def load_cmhc_vacancy_quartile():
             df[col] = to_numeric_safe(df[col])
     return df
 
-
+#Function to print a preview of each data set including their attributes.
 def preview(name, df):
     if df is None:
         print(f"\n  [{name}] failed to load.")

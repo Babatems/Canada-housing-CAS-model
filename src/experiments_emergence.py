@@ -270,7 +270,7 @@ def experiment_e3():
     newcomer_disp = [all_results[s[2]]['pct_newcomer_displaced'][-1] for s in scenarios]
     x = np.arange(len(scenarios))
     bar_width = 0.35
-    ax4.bar(x - bar_width/2, final_disp, bar_width, label='Overall Displaced%',  color=colors, alpha=0.85)
+    ax4.bar(x - bar_width/2, final_disp, bar_width, label='Overall Displaced%', color=colors, alpha=0.85)
     ax4.bar(x + bar_width/2, newcomer_disp, bar_width, label='Newcomer Displaced%', color=[c for c in colors], alpha=0.50, edgecolor='black', linewidth=0.8)
     ax4.set_title('Final Year Displacement by Scenario\n(Overall vs. Newcomer)', fontweight='bold')
     ax4.set_xlabel('Rent-Income Gap Scenario')

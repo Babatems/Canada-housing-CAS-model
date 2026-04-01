@@ -18,7 +18,7 @@ def section(title):
     print(f"  {title}")
     print("="*60)
 
-
+# Smoke test to verify model runs and produces expected outputs
 def run_model_test():
     section("STEP 1 — Model Smoke Test")
     from model import ModelParams, run_simulation, CMAS, CMA_BASE_RENTS
@@ -27,14 +27,14 @@ def run_model_test():
     G = results['G']
     print(f"\n  Network : {G.number_of_nodes()} nodes, "
           f"{G.number_of_edges()} edges")
-    print(f"  Households     : {len(G.graph['household_ids'])}")
+    print(f"  Households : {len(G.graph['household_ids'])}")
     print(f"  Neighbourhoods : {len(G.graph['neighbourhood_ids'])}")
-    print(f"  Employers      : {len(G.graph['employer_ids'])}")
+    print(f"  Employers : {len(G.graph['employer_ids'])}")
     print(f"\n  Default run — final year summary:")
-    print(f"    Displaced        : {results['pct_displaced'][-1]}%")
-    print(f"    Cost-burdened    : {results['pct_cost_burdened'][-1]}%")
-    print(f"    Newcomer disp.   : {results['pct_newcomer_displaced'][-1]}%")
-    print(f"    Avg rent burden  : {results['avg_rent_burden'][-1]:.3f}")
+    print(f"    Displaced : {results['pct_displaced'][-1]}%")
+    print(f"    Cost-burdened : {results['pct_cost_burdened'][-1]}%")
+    print(f"    Newcomer disp. : {results['pct_newcomer_displaced'][-1]}%")
+    print(f"    Avg rent burden : {results['avg_rent_burden'][-1]:.3f}")
     print(f"\n  Final avg rent by CMA (after {params.num_steps} years):")
     for cma in CMAS:
         start = CMA_BASE_RENTS[cma]
@@ -44,7 +44,7 @@ def run_model_test():
     print("\n  Model smoke test passed.")
     return results
 
-
+#Section to run emergence experiments
 def run_emergence_experiments():
     """Runs all 3 emergence experiments and returns results."""
     section("STEP 2 — Emergence Experiments (E1, E2, E3)")
@@ -67,7 +67,7 @@ def run_emergence_experiments():
 
     return {'e1': e1, 'e2': e2, 'e3': e3}
 
-
+# Section to run self-organization experiments
 def run_so_experiments():
     """Runs all 3 self-organization experiments and returns results."""
     section("STEP 3 — Self-Organization Experiments (S1, S2, S3)")
@@ -90,7 +90,7 @@ def run_so_experiments():
 
     return {'s1': s1, 's2': s2, 's3': s3}
 
-
+# Section to print summary of results from emergence,  self-organization experiments and output files
 def print_summary(emergence_results, so_results):
     print("  Output files saved to outputs/:")
     graphs = [
@@ -106,7 +106,7 @@ def print_summary(emergence_results, so_results):
         exists = "Yes" if os.path.exists(path) else "MISSING"
         print(f"    {exists}  {g}")
 
-
+# Main function to run the model test, emergence experiments, and self-organization experiments
 def main():
     args = sys.argv[1:]
 
