@@ -49,6 +49,8 @@ final_project/
   |
   |-- README.txt                    This file you are currently in
   |-- requirements.txt              Conda environment dependencies
+  |-- AI Statement.pdf              Contains a documentation on which AI was used and conclusions drawn from its usage
+  |-- Final Report.pdf              Final Report documentation
 
 ENVIRONMENT SETUP:
 This project requires Python 3.11.14. A conda environment is recommended.
